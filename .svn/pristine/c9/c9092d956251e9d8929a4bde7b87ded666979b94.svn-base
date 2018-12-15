@@ -1,0 +1,76 @@
+package controller;
+
+import org.apache.log4j.Logger;
+
+import com.bamboocloud.api.ApphubSdk;
+import com.jfinal.core.ActionKey;
+import com.jfinal.core.Controller;
+import com.jfinal.kit.StrKit;
+
+public class SDKLoginController extends Controller {
+	private String tokenid;
+	private String app_id="1Dong";//注册在综合信息系统的app的username
+	private String app_key="Abcd1234";//注册在综合信息系统的app的password
+	//private String targetsystemId="20180803110353039-E664-08D8C100B";//注册在综合信息系统的app的ID
+	private ApphubSdk sdk=new ApphubSdk();
+	private Logger log=Logger.getLogger(SDKLoginController.class);
+	@ActionKey("/sdkLogin")
+	public void sdkLogin() {
+	
+		String appName = getPara("appName");//获取应用账户名
+
+		if(StrKit.notBlank(appName)) {
+			/*Kuser user=KuserService.getKuser(appName);
+			if(user==null){	
+				
+				try {
+					String data=HttpUtil.login(appName);
+					String str=HttpUtil.getLogin(data,"http://xcgov.hzxc.gov.cn/Base-Module/CompanyUserLogin/Login");
+					String userName=HttpUtil.getUserName(str);
+					KuserService.saveKuser(appName, userName);
+					redirect("http://tyhy.hzxc.gov.cn:8003?appName="+appName);
+
+				} catch (Exception e) {
+					redirect("http://zh.hzxc.gov.cn/"); 
+				
+				}
+			}else if(user.getStatus()==4){
+				redirect("http://zh.hzxc.gov.cn/"); 
+			}else{
+				redirect("http://tyhy.hzxc.gov.cn:8003?appName="+appName);
+				
+			}*/
+		
+		}else{
+			redirect("http://zh.hzxc.gov.cn/"); 
+		}
+		
+	}
+
+	@ActionKey("/login")
+	public void login() {
+		    /*String appName = getPara("appName");//获取应用账户名
+			Kuser user=KuserService.getKuser(appName);
+			
+			if(user==null){	
+				 renderJson(MsgUtil.errorMsg("用户不存在"));
+			}else{
+				setSessionAttr("kuser", user);
+				System.out.println("登入成功!");
+				renderJson(MsgUtil.successMsg(user.getUserName()));
+			}*/
+			
+		
+	}
+	//退出
+		@ActionKey("/loginOut")
+		public void loginOut() {
+			/*removeSessionAttr("kuser");
+			renderJson(MsgUtil.successMsg("成功退出"));*/
+			
+		}
+	
+	
+
+
+}

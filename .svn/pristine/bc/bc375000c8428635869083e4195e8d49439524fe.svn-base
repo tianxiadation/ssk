@@ -1,0 +1,10 @@
+# config
+jdbcUrl = jdbc:mysql://172.16.10.144:3306/ssk?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+user = root
+password =jiaojun
+devMode = true
+test = jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+ssk = jdbc:mysql://localhost:3306/ssk?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+myuser = root
+mypassword =123
+mydevMode = true

@@ -1,0 +1,85 @@
+package controller;
+
+import com.alibaba.fastjson.JSONObject;
+import model.Msg;
+//import model.XcUser;
+import model.ssk.XcUser;
+import model.test.Kuser;
+import org.apache.log4j.Logger;
+
+import com.bamboocloud.api.ApphubSdk;
+import com.jfinal.core.ActionKey;
+import com.jfinal.core.Controller;
+import com.jfinal.kit.StrKit;
+import util.HttpUtil;
+import util.MsgUtil;
+
+import java.util.List;
+//iter
+public class SDKLoginController extends Controller {
+    public void action() {
+        List<XcUser> users=XcUser.getList();
+        for (XcUser user : users) {
+            Kuser k=Kuser.getKuser(user.getUserId());
+            if(k!=null){
+                user.setDept(k.getDName()).setDeptId(k.getUDeptId()).use("ssk").update();
+                System.out.println("1");
+            }
+        }
+        renderJson(MsgUtil.successMsg("补齐部门成功"));
+    }
+    protected void index() {
+		render("index.html");
+	}
+
+	@ActionKey("/sdkLogin")
+	public void sdkLogin() {
+	
+		String appName = getPara("appName");//获取应用账户名
+
+		if(StrKit.notBlank(appName)) {
+			XcUser user=XcUser.getUser(appName);
+			if(user==null){
+
+					JSONObject data=HttpUtil.loginIm(appName);
+		             //renderJson(MsgUtil.successMsg(data));
+					XcUser xcUser=data.toJavaObject(XcUser.class);
+					xcUser.save();
+
+			}
+			//redirect("http://tyhy.hzxc.gov.cn:8003?appName="+appName);
+			renderJson(MsgUtil.successMsg("登入成功"));
+		
+		}else{
+			redirect("http://zh.hzxc.gov.cn/"); 
+		}
+		
+	}
+
+	@ActionKey("/login")
+	public void login() {
+		    String appName = getPara("appName");//获取应用账户名
+		    XcUser user=XcUser.getUser(appName);
+			
+			if(user==null){	
+				 renderJson(MsgUtil.errorMsg("用户不存在"));
+			}else{
+				setSessionAttr("user", user);
+				System.out.println("登入成功!");
+				renderJson(MsgUtil.successMsg(user));
+			}
+			
+		
+	}
+	//退出
+		@ActionKey("/loginOut")
+		public void loginOut() {
+			removeSessionAttr("user");
+			renderJson(MsgUtil.successMsg("成功退出"));
+			
+		}
+
+	
+
+
+}

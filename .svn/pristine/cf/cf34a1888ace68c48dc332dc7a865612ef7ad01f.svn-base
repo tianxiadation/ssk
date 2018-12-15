@@ -1,0 +1,79 @@
+package util.node;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Node {
+    private String cid;
+    private String name;
+    private String ename;
+    private String remarks;
+    private String pid;
+    private Long id;
+    private List<Node> children = new ArrayList<>();
+
+    public Node(String cid, String name, String ename, String remarks, String pid, Long id) {
+        this.cid = cid;
+        this.name = name;
+        this.ename = ename;
+        this.remarks = remarks;
+        this.pid = pid;
+        this.id = id;
+    }
+
+    public String getCid() {
+        return cid;
+    }
+
+    public void setCid(String cid) {
+        this.cid = cid;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEname() {
+        return ename;
+    }
+
+    public void setEname(String ename) {
+        this.ename = ename;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public List<Node> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Node> children) {
+        this.children = children;
+    }
+}

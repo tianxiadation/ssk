@@ -1,0 +1,22 @@
+package config;
+
+import java.util.TimerTask;
+
+import org.apache.log4j.Logger;
+
+import service.DayService;
+
+public class DayTimerTask extends TimerTask{
+	@Override
+	public void run() {
+		try {  
+			DayService.getDayData();
+		} catch (Exception e) {  
+           System.out.println("-------------Day解析信息发生异常--------------"); 
+          
+       }  
+		
+	}
+
+
+}

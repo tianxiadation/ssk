@@ -1,0 +1,49 @@
+package controller;
+
+import com.jfinal.core.Controller;
+import com.jfinal.plugin.activerecord.Db;
+import com.jfinal.plugin.activerecord.Record;
+import model.ssk.XcIndex;
+import util.MsgUtil;
+
+import java.util.List;
+
+//指标配置
+public class IndexController extends Controller {
+
+    public void index(){
+
+    }
+
+
+    public void table() {
+        List<XcIndex> list=XcIndex.getXC(2);
+        for(XcIndex xc:list){
+           Record record= Db.findFirst("SELECT TABLE_NAME,TABLE_COMMENT FROM information_schema.TABLES WHERE " +
+                    "table_schema='hz_xc_sssj' and TABLE_COMMENT " +
+                    "like '%企业%' and TABLE_COMMENT like '%"+xc.getName()+"%'");
+           if(record!=null){
+               xc.setEname(record.getStr("TABLE_NAME")).setRemarks(record.getStr("TABLE_COMMENT")).update();
+
+           }
+
+        }
+        renderJson(MsgUtil.successMsg("同步企业表英文名成功"));
+    }
+    public void column() {
+        List<XcIndex> list=XcIndex.getXC(2);
+        for(XcIndex xc:list){
+
+           List<Record> record= Db.find("SELECT COLUMN_NAME,column_comment FROM INFORMATION_SCHEMA.Columns " +
+                   "WHERE table_name=? AND table_schema='hz_xc_sssj'",xc.getEname());
+           if(record!=null){
+               //xc.setEname(record.getStr("TABLE_NAME")).setRemarks(record.getStr("TABLE_COMMENT")).update();
+               for (int i = 0; i <record.size() ; i++) {
+                   XcIndex.saveXc(xc.getCid(),record.get(i).getStr("column_comment"),record.get(i).getStr("COLUMN_NAME"));
+               }
+           }
+
+        }
+        renderJson(MsgUtil.successMsg("同步企业表字段成功"));
+    }
+}
