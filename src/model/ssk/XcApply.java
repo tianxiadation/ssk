@@ -10,10 +10,12 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class XcApply extends BaseXcApply<XcApply> {
 	public static final XcApply dao = new XcApply().dao();
-	public static void saveApply(String userid,String deptName,String trueName,String resources,String typeName,int type,String reason){
-		new XcApply().setUserId(userid).setDeptName(deptName).setTrueName(trueName)
+	public static long saveApply(int userid,String deptName,String trueName,String resources,String typeName,int type,String reason,String cid){
+		    XcApply xc=   new XcApply().setUserId(userid).setDeptName(deptName).setTrueName(trueName)
 				.setResources(resources).setReason(reason).setCrateTime(new Date())
-				.setGmtCreate(new Date().getTime()).setType(type).setTypeName(typeName).save();
+				.setGmtCreate(new Date().getTime()).setType(type).setTypeName(typeName).setCid(cid);
+		    xc.save();
+		    return xc.getId();
 
 	}
 }

@@ -446,6 +446,32 @@ public class HttpUtil {
 		return   json2;                                              
 		
 	}
+	public static  JSONObject doPost3(String url,String outStr){
+		HttpClient httpClient = HttpClients.custom().build();
+		HttpPost httpPost=new HttpPost(url);
+		String result="";
+		try {
+			StringEntity entity=new StringEntity(outStr,"utf8");
+			entity.setContentType("application/json");
+			httpPost.setEntity(entity);
+
+			HttpResponse response=httpClient.execute(httpPost);
+			if(response.getStatusLine().getStatusCode()==200){
+				//HttpResponseProxy{HTTP/1.1 200 OK [Content-Length: 172, Content-Type: application/json; charset=utf-8, Server: Microsoft-IIS/8.0, X-Powered-By: ASP.NET, Date: Fri, 19 Jan 2018 03:41:44 GMT] ResponseEntityProxy{[Content-Type: application/json; charset=utf-8,Content-Length: 172,Chunked: false]}}
+				result=EntityUtils.toString(response.getEntity(),"UTF-8");
+
+			}
+		}catch (Exception e){
+			e.printStackTrace();
+			//System.out.println(url+"--interface Exception");
+		}finally{
+
+		}
+		JSONObject json33 = JSON.parseObject(result);
+
+		return   json33;
+
+	}
 	
 	//登录获取token和username
 	public static JSONObject loginIm(String imName) {

@@ -10,7 +10,7 @@ import java.util.Date;
 @SuppressWarnings("serial")
 public class XcLog extends BaseXcLog<XcLog> {
 	public static final XcLog dao = new XcLog().dao();
-	public static void saveLog(String userId,String log,String trueName){
+	public static void saveLog(int userId,String log,String trueName){
 		new XcLog().setUserId(userId).setGmtCreate(new Date().getTime()).setCrateTime(new Date())
 	    .setLog(log).setTrueName(trueName).save();
 	}

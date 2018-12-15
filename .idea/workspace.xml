@@ -6,40 +6,98 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="60d46e16-bab0-40af-bfd6-7dacb2f9cc7e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/QueryServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/config/DemoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/config/DemoConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/MsgTreeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/MsgTreeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/SDKLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/SDKLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/base/ssk/BaseXcUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/base/ssk/BaseXcUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/ssk/XcIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/ssk/XcIndex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/ssk/XcUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/ssk/XcUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/DemoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/DemoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MsgTreeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MsgTreeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/SDKLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SDKLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" afterDir="false" />
+    <list default="true" id="60d46e16-bab0-40af-bfd6-7dacb2f9cc7e" name="Default" comment="12.12">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/a_little_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/a_little_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/HttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/httpDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/httpDataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/a_little_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/a_little_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/HttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/httpDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/httpDataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/a_little_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/a_little_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ApplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ApplyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/BaseCountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/BaseCountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/QueryServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/QueryServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseRegCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseRegCompany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseRegCompanyDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseRegCompanyDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseRegUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseRegUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseRegUserDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseRegUserDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcApply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcBug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcBug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcDatasource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcDatasource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcMsgcount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcMsgcount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcSourcecount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcSourcecount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/base/ssk/BaseXcUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/base/ssk/BaseXcUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ssk/XcIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ssk/XcIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ssk/XcUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ssk/XcUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ssk/XcApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ssk/XcApply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ssk/XcLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ssk/XcLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssk.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="613934469">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="12" />
+          <entry key="md" value="1" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="12" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="985" />
+          <entry key="txt" value="43" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="985" />
+          <entry key="PLAIN_TEXT" value="43" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QueryServiceController.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2900">
-              <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+            <state relative-caret-position="630">
+              <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,11 +105,92 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgTreeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/MsgTreeController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/BaseCountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="322">
+              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/ApplyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/DemoConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ssk/XcLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/_JFinalDemoGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108">
+              <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/fastjson-1.2.31.jar!/com/alibaba/fastjson/JSONObject.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
+              <folding>
+                <element signature="e#4847#4848#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/HttpUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="455" column="39" lean-forward="true" selection-start-line="455" selection-start-column="39" selection-end-line="455" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ssk/XcApply.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#112#139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,11 +215,13 @@
       <replace>getPara</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/WebRoot/index.html" />
-        <option value="$PROJECT_DIR$/src/util/HttpUtil.java" />
         <option value="$PROJECT_DIR$/src/model/XcUser.java" />
         <option value="$PROJECT_DIR$/src/model/_MappingKit.java" />
         <option value="$PROJECT_DIR$/src/model/test/Kuser.java" />
@@ -96,26 +237,28 @@
         <option value="$PROJECT_DIR$/src/model/ssk/XcCount.java" />
         <option value="$PROJECT_DIR$/src/interceptor/SimpleCROSFilter.java" />
         <option value="$PROJECT_DIR$/src/util/httpDataUtil.java" />
-        <option value="$PROJECT_DIR$/src/model/ssk/XcLog.java" />
-        <option value="$PROJECT_DIR$/src/controller/BaseCountController.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcBug.java" />
         <option value="$PROJECT_DIR$/src/config/DayTimerTask.java" />
         <option value="$PROJECT_DIR$/src/interceptor/MainInterceptor.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcDatasource.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" />
-        <option value="$PROJECT_DIR$/src/model/ssk/XcApply.java" />
         <option value="$PROJECT_DIR$/src/util/StrUtil.java" />
-        <option value="$PROJECT_DIR$/src/controller/ApplyController.java" />
         <option value="$PROJECT_DIR$/src/util/node/Node.java" />
-        <option value="$PROJECT_DIR$/res/a_little_config.txt" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcIndex.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcUser.java" />
         <option value="$PROJECT_DIR$/src/config/DemoConfig.java" />
         <option value="$PROJECT_DIR$/src/controller/SDKLoginController.java" />
         <option value="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/controller/QueryServiceController.java" />
         <option value="$PROJECT_DIR$/src/controller/MsgTreeController.java" />
+        <option value="$PROJECT_DIR$/res/a_little_config.txt" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/src/util/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/model/ssk/XcLog.java" />
+        <option value="$PROJECT_DIR$/src/controller/BaseCountController.java" />
+        <option value="$PROJECT_DIR$/src/model/ssk/XcApply.java" />
+        <option value="$PROJECT_DIR$/src/controller/QueryServiceController.java" />
+        <option value="$PROJECT_DIR$/src/controller/ApplyController.java" />
       </list>
     </option>
   </component>
@@ -132,13 +275,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="337" />
-    <option name="y" value="23" />
-    <option name="width" value="1346" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="382" />
+    <option name="y" value="47" />
+    <option name="width" value="947" />
     <option name="height" value="688" />
   </component>
   <component name="ProjectView">
@@ -147,7 +287,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -155,11 +294,6 @@
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
@@ -196,28 +330,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544894931558" />
+    <property name="last_opened_file_path" value="D:" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/API.md" />
   </component>
   <component name="RecentsManager">
@@ -252,6 +383,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="StrUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.StrUtil" />
@@ -263,6 +397,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="_JFinalDemoGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model._JFinalDemoGenerator" />
@@ -274,50 +411,31 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ssk" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:28080/ssk/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -339,6 +457,9 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="61344" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="64393" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -370,6 +491,36 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -385,7 +536,8 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="ssk:Web exploded" />
         </option>
@@ -406,30 +558,8 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>C:\Users\39805\AppData\Roaming\Subversion</configuration>
+    <configuration useDefault="false">C:\Users\39805\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\coco\ssk" />
-          <option name="myCopyRoot" value="E:\coco\ssk" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\coco\ssk\.idea" />
-          <option name="myCopyRoot" value="E:\coco\ssk\.idea" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="E:\coco\ssk" />
-          <option name="myCopyRoot" value="E:\coco\ssk" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -479,6 +609,8 @@
       <workItem from="1544751080551" duration="12694000" />
       <workItem from="1544773644910" duration="10107000" />
       <workItem from="1544851894821" duration="761000" />
+      <workItem from="1544858456097" duration="2600000" />
+      <workItem from="1544864684218" duration="18805000" />
     </task>
     <task id="LOCAL-00001">
       <created>1542178392902</created>
@@ -596,79 +728,86 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253525000" />
+    <option name="totallyTimeSpent" value="274930000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="1" weight="0.2359736" />
-      <window_info anchor="right" id="Maven Projects" order="0" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.3960396" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32838285" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.34983498" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32838285" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.22087745" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info id="Learn" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Learn" order="4" weight="0.32980332" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.18154311" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="JRebel" order="9" side_tool="true" />
       <window_info anchor="bottom" id="SVN Repositories" order="0" weight="0.41584158" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3349835" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="1" weight="0.23442623" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.33442622" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32786885" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.34918034" />
+      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.3409836" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="1" weight="0.2359736" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Palette" order="5" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.34983498" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32838285" />
+      <window_info id="Learn" order="4" weight="0.32980332" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.18154311" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.2310231" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info id="JRebel" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="SVN Repositories" order="0" weight="0.41584158" />
+      <window_info anchor="bottom" id="Application Servers" order="1" weight="0.23442623" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.33442622" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32838285" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="SVN Repositories" order="0" weight="0.41584158" />
-      <window_info anchor="right" id="Maven Projects" order="0" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21785174" />
-      <window_info id="Learn" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32786885" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.34918034" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4180328" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="JRebel Executor" order="15" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.4108911" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,37 +824,11 @@
     <MESSAGE value="12.12" />
     <option name="LAST_COMMIT_MESSAGE" value="12.12" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="47" />
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/plugin/activerecord/generator/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2237">
-          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/test/Kuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/kit/PropKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/test/_MappingKit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -753,16 +866,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcDatasource.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -834,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/apphub-sdk-2.0.0.jar!/com/bamboocloud/api/ApphubSdk.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -848,13 +944,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/java/net/URLEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/java/net/URLEncoder.class" />
     <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -918,27 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ApplyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/_JFinalDemoGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/JsonUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -953,62 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/DemoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1880">
-          <caret line="111" column="61" selection-start-line="111" selection-start-column="61" selection-end-line="111" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/a_little_config.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/BaseCountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interceptor/MainInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/aop/Invocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SDKLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="248" column="30" selection-start-line="248" selection-start-column="30" selection-end-line="248" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interceptor/SimpleCROSFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1043,20 +1060,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
+    <entry file="file://$PROJECT_DIR$/res/a_little_config.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2900">
-          <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interceptor/SimpleCROSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="47" column="12" lean-forward="true" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MsgTreeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SDKLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="455" column="39" lean-forward="true" selection-start-line="455" selection-start-column="39" selection-end-line="455" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+          <folding>
+            <element signature="e#4847#4848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/aop/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/fastjson-1.2.31.jar!/com/alibaba/fastjson/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/_JFinalDemoGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/BaseCountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcApply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#112#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/DemoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MsgTreeController.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="630">
+          <caret line="53" column="46" lean-forward="true" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ApplyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1253,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -1079,4 +1079,76 @@ http://localhost:28080/ssk/index/editIndex
 }                    
 ```
 
-### 
+### 16.查询服务
+
+```
+http://localhost:28080/ssk/qs/selectQS
+```
+
+### post参数
+
+| 名称  | 类型   | 是否必填 | 说明                       |
+| ----- | ------ | -------- | -------------------------- |
+| type  | int    | 必填     | 类型（1.人口2.企业3.房屋） |
+| value | String | 必填     | 是否最后一层指标           |
+
+```
+[
+        {
+            "ename": null,
+            "islast": false,
+            "level": 1,
+            "children": [
+                {
+                    "ename": "rkdjinfo",
+                    "islast": true,
+                    "level": 2,
+                    "children": [],
+                    "name": "登记信息",
+                    "pid": "1",
+                    "id": 6,
+                    "type": 1,
+                    "cid": "6"
+                },
+                {
+                    "ename": "rksltzinfo",
+                    "islast": true,
+                    "level": 2,
+                    "children": [],
+                    "name": "生理体征信息",
+                    "pid": "1",
+                    "id": 7,
+                    "type": 1,
+                    "cid": "7"
+                },
+                ...
+  ]
+```
+
+#### 返回值
+
+- data 对象数组
+- ename表英文名，字段英文名
+- islast是否最后一层指标
+- children子集对象数组
+- name名称
+- pid父id
+- id编号id
+- cid子id
+- level指标等级
+
+#### example（指标配置）
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+###  

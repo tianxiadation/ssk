@@ -53,7 +53,7 @@ public class BaseCountController extends Controller {
 
             List<XcIndex> list=XcIndex.getXC1();
             for(XcIndex xc:list){
-                XcLog.saveLog("PQV8oo3jeeiDkLbY",xc.getRemarks(),"方升群");
+                XcLog.saveLog(11,xc.getRemarks(),"方升群");
 
             }
 

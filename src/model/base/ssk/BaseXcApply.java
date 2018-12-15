@@ -18,13 +18,13 @@ public abstract class BaseXcApply<M extends BaseXcApply<M>> extends Model<M> imp
 		return getLong("id");
 	}
 
-	public M setUserId(java.lang.String userId) {
+	public M setUserId(java.lang.Integer userId) {
 		set("userId", userId);
 		return (M)this;
 	}
 	
-	public java.lang.String getUserId() {
-		return getStr("userId");
+	public java.lang.Integer getUserId() {
+		return getInt("userId");
 	}
 
 	public M setDeptName(java.lang.String deptName) {
@@ -43,6 +43,15 @@ public abstract class BaseXcApply<M extends BaseXcApply<M>> extends Model<M> imp
 	
 	public java.lang.String getTrueName() {
 		return getStr("trueName");
+	}
+
+	public M setCid(java.lang.String cid) {
+		set("cid", cid);
+		return (M)this;
+	}
+	
+	public java.lang.String getCid() {
+		return getStr("cid");
 	}
 
 	public M setResources(java.lang.String resources) {

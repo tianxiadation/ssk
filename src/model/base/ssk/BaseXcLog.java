@@ -18,13 +18,13 @@ public abstract class BaseXcLog<M extends BaseXcLog<M>> extends Model<M> impleme
 		return getLong("id");
 	}
 
-	public M setUserId(java.lang.String userId) {
+	public M setUserId(java.lang.Integer userId) {
 		set("userId", userId);
 		return (M)this;
 	}
 	
-	public java.lang.String getUserId() {
-		return getStr("userId");
+	public java.lang.Integer getUserId() {
+		return getInt("userId");
 	}
 
 	public M setTrueName(java.lang.String trueName) {
