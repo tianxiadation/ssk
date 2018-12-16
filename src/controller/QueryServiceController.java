@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QueryServiceController extends Controller {
+    //申请全信息
        public void apply(){
            String cid=getPara("cid");
            XcUser user=getSessionAttr("user");
@@ -56,9 +57,23 @@ public class QueryServiceController extends Controller {
                 List<Record> records=new ArrayList<Record>();
                 json.put("Header",record);
                 json.put("table",records);
-            }else{
+            }else if(XcApply.getApplyIsExist(cid,user.getId())){
                 // List<XcIndex> list=XcIndex.
                 String[] str={"cardNum","QYMC","UNISCID","addressInfo"};
+                if(xc.getType()==1) {
+                    List<Record> record = Db.find("SELECT column_name,column_comment FROM INFORMATION_SCHEMA.Columns WHERE table_name=? AND table_schema='hz_xc_sssj'", xc.getEname());
+                    List<Record> records = Db.find("select * from hz_xc_sssj." + xc.getEname() + " where cardNum=?", value);
+                    json.put("Header", record);
+                    json.put("table", records);
+                }else if(xc.getType()==2){
+                    List<Record> record = Db.find("SELECT column_name,column_comment FROM INFORMATION_SCHEMA.Columns WHERE table_name=? AND table_schema='hz_xc_sssj'", xc.getEname());
+                    List<Record> records = Db.find("select * from hz_xc_sssj." + xc.getEname() + " where  QYMC=? or UNISCID=?", value,value);
+                    json.put("Header", record);
+                    json.put("table", records);
+                }
+            }else{
+                // List<XcIndex> list=XcIndex.
+                //String[] str={"cardNum","QYMC","UNISCID","addressInfo"};
                 if(xc.getType()==1) {
                     List<Record> record = Db.find("SELECT column_name,column_comment FROM INFORMATION_SCHEMA.Columns WHERE table_name=? AND table_schema='hz_xc_sssj'", xc.getEname());
                     List<Record> records = Db.find("select * from hz_xc_sssj." + xc.getEname() + " where cardNum=?", value);

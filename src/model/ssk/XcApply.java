@@ -18,4 +18,7 @@ public class XcApply extends BaseXcApply<XcApply> {
 		    return xc.getId();
 
 	}
+	public static boolean getApplyIsExist(String cid,int userid){
+		return XcApply.dao.findFirst("select * from xc_apply where userid=? and cid=? and type=2",userid,cid)==null?false:true;
+	}
 }

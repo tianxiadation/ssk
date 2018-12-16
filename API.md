@@ -102,7 +102,7 @@ http://localhost:28080/ssk/if/download
 http://localhost:28080/ssk/index/selectIndexOrDatasource
 ```
 
-### post参数
+#### post参数
 
 | 名称       | 类型   | 是否必填 | 说明                                  |
 | ---------- | ------ | -------- | ------------------------------------- |
@@ -183,7 +183,7 @@ http://localhost:28080/ssk/index/selectIndexOrDatasource
 http://localhost:28080/ssk/index/selectIndexOrDatasource
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型   | 是否必填 | 说明                                  |
 | ---- | ------ | -------- | ------------------------------------- |
@@ -250,7 +250,7 @@ http://localhost:28080/ssk/index/selectIndexOrDatasource
 http://localhost:28080/ssk/index/selectIndexOrDatasource
 ```
 
-### post参数，支持格式JOSN   
+#### post参数，支持格式JOSN   
 
 | 名称       | 类型   | 是否必填 | 说明                                       |
 | ---------- | ------ | -------- | ------------------------------------------ |
@@ -302,7 +302,7 @@ http://localhost:28080/ssk/index/selectIndexOrDatasource
 http://localhost:28080/ssk/tree/msgTree
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型 | 是否必填 | 说明                                  |
 | ---- | ---- | -------- | ------------------------------------- |
@@ -360,7 +360,7 @@ http://localhost:28080/ssk/tree/msgTree
 http://localhost:28080/ssk/tree/cloud
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型 | 是否必填 | 说明                                  |
 | ---- | ---- | -------- | ------------------------------------- |
@@ -412,7 +412,7 @@ http://localhost:28080/ssk/tree/cloud
 http://localhost:28080/ssk/index/selectDatasourceById
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型 | 是否必填 | 说明   |
 | ---- | ---- | -------- | ------ |
@@ -511,7 +511,7 @@ http://localhost:28080/ssk/base/selectXcCount
 http://localhost:28080/ssk/base/selectDatasource
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型 | 是否必填 | 说明                            |
 | ---- | ---- | -------- | ------------------------------- |
@@ -565,7 +565,7 @@ http://localhost:28080/ssk/base/selectDatasource
 http://localhost:28080/ssk/base/selectLog
 ```
 
-### post参数
+#### post参数
 
 | 名称       | 类型 | 是否必填 | 说明 |
 | ---------- | ---- | -------- | ---- |
@@ -663,7 +663,7 @@ http://localhost:28080/ssk/base/selectLog
 http://localhost:28080/ssk/apply/selectApply
 ```
 
-### post参数
+#### post参数
 
 | 名称       | 类型 | 是否必填 | 说明 |
 | ---------- | ---- | -------- | ---- |
@@ -760,7 +760,7 @@ http://localhost:28080/ssk/apply/selectApply
 http://localhost:28080/ssk/apply/selectOneApply
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型 | 是否必填 | 说明     |
 | ---- | ---- | -------- | -------- |
@@ -793,7 +793,7 @@ http://localhost:28080/ssk/apply/selectOneApply
 http://localhost:28080/ssk/index/isExist
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型   | 是否必填 | 说明     |
 | ---- | ------ | -------- | -------- |
@@ -821,7 +821,7 @@ http://localhost:28080/ssk/index/isExist
 http://localhost:28080/ssk/index/selectDataItem
 ```
 
-### post参数
+#### post参数
 
 | 名称 | 类型   | 是否必填 | 说明     |
 | ---- | ------ | -------- | -------- |
@@ -1008,7 +1008,7 @@ http://localhost:28080/ssk/index/selectDataItem
 http://localhost:28080/ssk/index/editIndex
 ```
 
-### post参数
+#### post参数
 
 | 名称     | 类型    | 是否必填           | 说明                       |
 | -------- | ------- | ------------------ | -------------------------- |
@@ -1069,7 +1069,7 @@ http://localhost:28080/ssk/index/editIndex
 - cid子id
 - level指标等级
 
-#### example（指标配置）
+#### example
 
 ```json
 {
@@ -1085,63 +1085,211 @@ http://localhost:28080/ssk/index/editIndex
 http://localhost:28080/ssk/qs/selectQS
 ```
 
-### post参数
+#### post参数
 
 | 名称  | 类型   | 是否必填 | 说明                       |
 | ----- | ------ | -------- | -------------------------- |
 | type  | int    | 必填     | 类型（1.人口2.企业3.房屋） |
-| value | String | 必填     | 是否最后一层指标           |
-
-```
-[
-        {
-            "ename": null,
-            "islast": false,
-            "level": 1,
-            "children": [
-                {
-                    "ename": "rkdjinfo",
-                    "islast": true,
-                    "level": 2,
-                    "children": [],
-                    "name": "登记信息",
-                    "pid": "1",
-                    "id": 6,
-                    "type": 1,
-                    "cid": "6"
-                },
-                {
-                    "ename": "rksltzinfo",
-                    "islast": true,
-                    "level": 2,
-                    "children": [],
-                    "name": "生理体征信息",
-                    "pid": "1",
-                    "id": 7,
-                    "type": 1,
-                    "cid": "7"
-                },
-                ...
-  ]
-```
+| value | String | 必填     | 查询值                     |
 
 #### 返回值
 
 - data 对象数组
-- ename表英文名，字段英文名
-- islast是否最后一层指标
-- children子集对象数组
-- name名称
-- pid父id
-- id编号id
-- cid子id
-- level指标等级
+- result 对象数组：查询内容（查询人口和企业的时候有）
+- --values 对象数组
+- ----ename 表英文名，字段英文名
+- ----num 查询个数
+- ----name 指标名称
+- ----type 状态0、申（未申请）1、审（申请中）2、全（已通过）3、被驳回
+- ----cid 子id
+- --name一级指标
+- rkdzxxinfo对象数组（人口地址信息）（房屋地址信息）（addressInfo地址信息，bzdz标准地址，dzCode地址编码，FWYT房屋用途，type地址类型）
+- dh对象数组（导航）（查询人口和企业的时候有）
+- --ename 表英文名，字段英文名
+- --name 指标名称
+- --cid 子id
+- --islast是否最后一级
+- fwxxbaseinfo对象数组（房屋地址信息）（addressInfo地址信息，bzdz标准地址，dzCode地址编码，FWYT房屋用途，type地址类型）
+- qybaseinfo对象数组（企业信息：QYMC企业名称，ZCH注册号，UNISCID统一社会信用代码）（查询人口和企业的时候有）
+- rkbaseinfo对象数组（人口信息：cardNum身份证号，name姓名，CZRKCSRQ出生日期，CZRKZZ住址，CZRKMZ民族，CZRKXB性别）（查询企业或房屋的时候有）
+- jcxx对象数组（基础信息）（人口信息：cardNum身份证号，name姓名，CZRKCSRQ出生日期，CZRKZZ住址，CZRKMZ民族，CZRKXB性别）（企业信息：QYMC企业名称，ZCH注册号，UNISCID统一社会信用代码）（查询人口或企业信息的时候有）
+- qydzxxinfo对象数组（企业地址信息）（房屋地址信息）（addressInfo地址信息，bzdz标准地址，dzCode地址编码，FWYT房屋用途，type地址类型）
+- qydzxxinfo_qy对象数组（企业地址信息对应的企业信息）
+- qydzxxinfo_rk对象数组（企业地址信息对应的人口信息）
+- fwxxbaseinfo_rk对象数组（房屋地址信息对应的人口信息）
+- fwxxbaseinfo_qy对象数组（房屋地址信息对应的企业信息）
+- rkdzxxinfo_qy对象数组（人口地址信息对应的企业信息）
+- rkdzxxinfo_rk对象数组（人口地址信息对应的人口信息）
 
-#### example（指标配置）
+#### example
 
 ```
+{
+    "code": 200,
+    "data": {
+        "result": [
+            {
+                "values": [
+                    {
+                        "ename": "rkdjinfo",
+                        "num": 0,
+                        "name": "登记信息",
+                        "type": 1,
+                        "cid": "6"
+                    },
+                   ......
+                    {
+                        "ename": null,
+                        "num": 0,
+                        "name": "联系信息测试数据",
+                        "type": 0,
+                        "cid": "3324"
+                    }
+                ],
+                "name": "基本信息"
+            },
+            
+            {
+                "values": [
+                    {
+                        "ename": null,
+                        "num": 0,
+                        "name": "测试三级1",
+                        "type": 0,
+                        "cid": "3328"
+                    },
+                    .........
+                    {
+                        "ename": null,
+                        "num": 0,
+                        "name": "6",
+                        "type": 0,
+                        "cid": "3337"
+                    }
+                ],
+                "name": "测试"
+            }
+           
+        ],
+        "rkdzxxinfo": [],
+        "dh": [
+            {
+                "ename": null,
+                "islast": false,
+                "name": "基本信息",
+                "cid": "1"
+            },
+            .......
+            {
+                "ename": null,
+                "islast": false,
+                "name": "测试测试",
+                "cid": "3360"
+            }
+        ],
+        "fwxxbaseinfo": [],
+        "qybaseinfo": [],
+        "jcxx": null,
+        "qydzxxinfo": []
+    },
+    "message": "Success"
+}
+```
+
+### 17.查询单个资源信息
 
 ```
+http://localhost:28080/ssk/qs/selectOneQS
+```
+
+#### post参数
+
+| 名称  | 类型   | 是否必填 | 说明                       |
+| ----- | ------ | -------- | -------------------------- |
+| cid   | String | 必填     | 类型（1.人口2.企业3.房屋） |
+| value | String | 必填     | 查询值                     |
+
+#### 返回值
+
+- data 对象
+- Header对象数组（表头）
+- --column_name字段英文名
+- --column_comment字段中文名
+- table对象数组（数据）
+
+#### example
+
+```
+{
+    "code": 200,
+    "data": {
+        "Header": [
+            {
+                "column_name": "id",
+                "column_comment": "唯一主键"
+            },
+            {
+                "column_name": "name",
+                "column_comment": "姓名"
+            },
+            ......
+            {
+                "column_name": "hasPatrol",
+                "column_comment": "是否已走访"
+            },
+            {
+                "column_name": "patrolLevel",
+                "column_comment": "走访等级"
+            },
+            {
+                "column_name": "manageType",
+                "column_comment": "管控对象类型"
+            },
+            {
+                "column_name": "operationTime",
+                "column_comment": "操作时间"
+            }
+        ],
+        "table": []
+    },
+    "message": "Success"
+}
+```
+
+### 18.申请全信息
+
+```
+http://localhost:28080/ssk/qs/apply
+```
+
+#### post参数
+
+| 名称   | 类型   | 是否必填 | 说明        |
+| ------ | ------ | -------- | ----------- |
+| cid    | String | 必填     | 指标配置cid |
+| reason | String | 必填     | 查询值      |
+
+#### 返回值
+
+- data 申请成功
+
+#### example
+
+```
+{
+    "code": 200,
+    "data": "申请成功",
+    "message": "Success"
+}
+```
+
+
+
+
+
+
+
+
 
 
 
