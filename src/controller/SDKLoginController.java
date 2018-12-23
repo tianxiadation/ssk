@@ -3,7 +3,9 @@ package controller;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.bamboocloud.util.JsonMethod;
+import com.jfinal.aop.Before;
 import com.jfinal.plugin.activerecord.Db;
+import interceptor.TokenInterceptor;
 import model.Msg;
 //import model.XcUser;
 import model.ssk.XcUser;
@@ -14,6 +16,7 @@ import com.bamboocloud.api.ApphubSdk;
 import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
 import com.jfinal.kit.StrKit;
+import token.Jwt;
 import util.Base64Util;
 import util.HttpUtil;
 import util.JsonUtil;
@@ -22,10 +25,7 @@ import util.MsgUtil;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 //iter
 public class SDKLoginController extends Controller {
@@ -49,24 +49,39 @@ public class SDKLoginController extends Controller {
 		this.tokenid = getPara("BBCloudBAMSession");        /*获取token*/
 
 
-		if (StrKit.isBlank(this.tokenid)||StrKit.isBlank(appName)) {//校验token是否获取到
+		/*if (StrKit.isBlank(this.tokenid)||StrKit.isBlank(appName)) {//校验token是否获取到
 
 			redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面，重新获取token
 			return;
 		}
-
 		Map<String, List<String>> mapper = this.sdk.informal_userInfo_getAttributes(this.tokenid, this.app_id, this.app_key);//获取用户信息
 		if (mapper.containsKey("notToken")) {//未获取到用户信息
 			if (this.sdk.informal_isAlive()) {//检测 统一用户  是否开启
-
 				redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面
 				return;
 			}
 
-			redirect("http://59.202.68.28:8001/#/?appName=" + appName);
+		}*/
+		XcUser user=XcUser.getUser(appName);
+		if(user==null){
+			redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面
+			return;
+		}else{
+			//redirect("http://59.202.68.28:8001/#/?appName=" + appName+"&token=?"+getToke("ssk",user.getAppName(),user.getUserName()));
+			setSessionAttr("user", user);
+			renderJson(getToke("ssk",user.getAppName(),user.getUserName()));
 		}
 	}
-
+		public static String getToke(String cCode,String userCode,String userName){
+			Map<String , Object> payload=new HashMap<String, Object>();
+			Date date=new Date();
+			payload.put("cCode", cCode);//用户ID
+			payload.put("userCode", userCode);//用户ID
+			payload.put("userName", userName);//用户ID
+			payload.put("iat", date.getTime());//生成时间
+			payload.put("ext",date.getTime()+1000*60*60);//过期时间1小时
+			return Jwt.createToken(payload);
+		}
 
 	/**
 	 * 注销
@@ -186,7 +201,7 @@ public class SDKLoginController extends Controller {
 		renderJson(MsgUtil.successMsg(result));
 	}
 
-
+	@Before(TokenInterceptor.class)
 	public void login() {
 		String appName = getPara("appName");//获取应用账户名
 		XcUser user=XcUser.getUser(appName);
@@ -200,6 +215,18 @@ public class SDKLoginController extends Controller {
 
 
 	}
+	@Before(TokenInterceptor.class)
+	public void test() {
+		JSONObject json=getSessionAttr("request");
+		renderJson(MsgUtil.successMsg(json));
+	}
+	@Before(TokenInterceptor.class)
+	public void test1() {
+		JSONObject json=getSessionAttr("request");
+		//JSONObject json=JsonUtil.getJSONObject(getRequest());
+		renderJson(MsgUtil.successMsg(json));
+	}
+
     /*public void action() {
         List<XcUser> users=XcUser.getList();
         for (XcUser user : users) {

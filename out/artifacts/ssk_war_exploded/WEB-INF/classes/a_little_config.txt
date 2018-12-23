@@ -1,0 +1,13 @@
+# config
+#jdbcUrl = jdbc:mysql://172.16.10.105:3306/ssk_cs?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+user = root
+#password =jiaojun
+devMode = true
+test = jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+jdbcUrl = jdbc:mysql://localhost:3306/ssk?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+password =tianxiadatong
+
+jdbcUrl1 = jdbc:mysql://59.202.68.14:3306/hz_xc_scjgfj?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+
+jdbcUrl2 = jdbc:mysql://59.202.68.32:3306/hz_xc_sssj?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+password2 =1qaz2wsx

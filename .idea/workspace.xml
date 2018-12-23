@@ -2,13 +2,46 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="jfinal_demo:Web exploded" />
-      <artifact name="ssk:Web exploded" />
+      <artifact name="ssk:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60d46e16-bab0-40af-bfd6-7dacb2f9cc7e" name="Default" comment="12.16.2">
+    <list default="true" id="60d46e16-bab0-40af-bfd6-7dacb2f9cc7e" name="Default" comment="12.23">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssk_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/asm-1.0-RC1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/cors-filter-2.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/java-property-utils-1.9.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-smart-2.0-RC2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/nimbus-jose-jwt-4.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interceptor/TokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/token/Jwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/token/TokenState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ssk_Web_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/a_little_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/a_little_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config/DemoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config/DemoConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controller/QueryServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controller/QueryServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controller/SDKLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/controller/SDKLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/model/ssk/_MappingKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/model/ssk/_MappingKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/HttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/httpDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/util/httpDataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/a_little_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/a_little_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/config/DemoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/config/DemoConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/SDKLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/controller/SDKLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/ssk/_MappingKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/model/ssk/_MappingKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/HttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/httpDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssk_Web_exploded/WEB-INF/classes/util/httpDataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/a_little_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/a_little_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/DemoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/DemoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/QueryServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/QueryServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SDKLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SDKLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssk.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <ignored path="D:/coco/jfinal_demo_for_maven/target/" />
@@ -22,56 +55,148 @@
     <session id="613934469">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="19" />
+          <entry key="java" value="40" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="1" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="40" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1235" />
-          <entry key="txt" value="72" />
+          <entry key="java" value="1731" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1235" />
-          <entry key="PLAIN_TEXT" value="72" />
+          <entry key="JAVA" value="1731" />
+          <entry key="PLAIN_TEXT" value="90" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            <state relative-caret-position="-792">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcDatasource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2001">
+              <caret line="205" column="29" selection-start-line="205" selection-start-column="29" selection-end-line="205" selection-end-column="29" />
+              <folding>
+                <element signature="e#4020#4021#0" expanded="true" />
+                <element signature="e#4060#4061#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/artifacts/ssk.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interceptor/TokenInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/interceptor/LoginInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/aop/Invocation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-94">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interceptor/MainInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/SDKLoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="220" selection-start-line="220" selection-end-line="220" />
+              <folding>
+                <element signature="e#2585#2601#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="476" column="4" lean-forward="true" selection-start-line="476" selection-start-column="4" selection-end-line="476" selection-end-column="4" />
+              <folding>
+                <element signature="e#4807#4808#0" expanded="true" />
+                <element signature="e#4847#4848#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/token/Jwt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-934">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,17 +250,12 @@
         <option value="$PROJECT_DIR$/src/config/DayTimerTask.java" />
         <option value="$PROJECT_DIR$/src/interceptor/MainInterceptor.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcDatasource.java" />
-        <option value="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" />
         <option value="$PROJECT_DIR$/src/util/StrUtil.java" />
         <option value="$PROJECT_DIR$/src/util/node/Node.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcIndex.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcUser.java" />
-        <option value="$PROJECT_DIR$/src/config/DemoConfig.java" />
-        <option value="$PROJECT_DIR$/src/controller/SDKLoginController.java" />
-        <option value="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/controller/MsgTreeController.java" />
-        <option value="$PROJECT_DIR$/res/a_little_config.txt" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
         <option value="$PROJECT_DIR$/src/util/HttpUtil.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcLog.java" />
@@ -143,9 +263,17 @@
         <option value="$PROJECT_DIR$/src/controller/ApplyController.java" />
         <option value="$PROJECT_DIR$/src/util/TokenUtil.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcApply.java" />
-        <option value="$PROJECT_DIR$/src/controller/QueryServiceController.java" />
         <option value="D:/coco/jfinal_demo/res/a_little_config.txt" />
         <option value="D:/coco/jfinal_demo/src/com/demo/blog/BlogController.java" />
+        <option value="$PROJECT_DIR$/src/token/TokenState.java" />
+        <option value="$PROJECT_DIR$/src/token/Jwt.java" />
+        <option value="$PROJECT_DIR$/res/a_little_config.txt" />
+        <option value="$PROJECT_DIR$/src/model/ssk/_MappingKit.java" />
+        <option value="$PROJECT_DIR$/src/config/DemoConfig.java" />
+        <option value="$PROJECT_DIR$/src/controller/QueryServiceController.java" />
+        <option value="$PROJECT_DIR$/src/interceptor/TokenInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/controller/SDKLoginController.java" />
+        <option value="$PROJECT_DIR$/src/interceptor/LoginInterceptor.java" />
       </list>
     </option>
   </component>
@@ -173,12 +301,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
@@ -194,23 +335,52 @@
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="token" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545546378838" />
-    <property name="last_opened_file_path" value="D:/coco/jfinal_demo/WebRoot/WEB-INF/lib" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545578369617" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -221,9 +391,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="interceptor" />
       <recent name="controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ssk\WebRoot\WEB-INF\lib" />
+      <recent name="D:\ssk\src\token" />
       <recent name="D:\coco\jfinal_demo\WebRoot\WEB-INF\lib" />
       <recent name="E:\coco\ssk\src\util" />
       <recent name="E:\coco\ssk\WebRoot\WEB-INF\lib" />
@@ -323,9 +496,9 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="jfinal_demo:Web exploded">
+        <artifact name="ssk:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/ssk" />
           </settings>
         </artifact>
       </deployment>
@@ -422,7 +595,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="ssk:Web exploded" />
+          <artifact name="ssk:war exploded" />
         </option>
       </method>
     </configuration>
@@ -498,7 +671,9 @@
       <workItem from="1544864684218" duration="23414000" />
       <workItem from="1544968589896" duration="4788000" />
       <workItem from="1545228556791" duration="3638000" />
-      <workItem from="1545545640757" duration="703000" />
+      <workItem from="1545545640757" duration="3042000" />
+      <workItem from="1545552337484" duration="47000" />
+      <workItem from="1545561557301" duration="11456000" />
     </task>
     <task id="LOCAL-00001">
       <created>1542178392902</created>
@@ -647,14 +822,22 @@
       <option name="project" value="LOCAL" />
       <updated>1544975389380</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="12.23">
+      <created>1545546468246</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1545546468246</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="288668000" />
+    <option name="totallyTimeSpent" value="302510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -662,22 +845,22 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" weight="0.32980332" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.3207262" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.22314675" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="JRebel" order="9" side_tool="true" />
       <window_info anchor="bottom" id="SVN Repositories" order="0" weight="0.41584158" />
       <window_info anchor="bottom" id="Application Servers" order="1" weight="0.23442623" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32838285" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.33442622" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32838285" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" visible="true" weight="0.27540985" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.27540985" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.34918034" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.25737706" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49924356" weight="0.25245902" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.27540985" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.34918034" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.33442622" />
+      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.31967214" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -700,22 +883,22 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" weight="0.32980332" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.18154311" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.22314675" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="JRebel" order="9" side_tool="true" />
       <window_info anchor="bottom" id="SVN Repositories" order="0" weight="0.41584158" />
       <window_info anchor="bottom" id="Application Servers" order="1" weight="0.23442623" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32838285" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.33442622" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32838285" />
-      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32786885" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.34918034" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4180328" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49924356" weight="0.25245902" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.27540985" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.34918034" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.33442622" />
+      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.452459" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -747,105 +930,26 @@
     <MESSAGE value="12.16" />
     <MESSAGE value="12.16.1" />
     <MESSAGE value="12.16.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.16.2" />
+    <MESSAGE value="12.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.23" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/SDKLoginController.java</url>
+          <line>219</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/node/InfiniteLevelTreeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="13" column="57" lean-forward="true" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/DayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/TimerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/httpDataUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/Base64Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/apphub-sdk-2.0.0.jar!/com/bamboocloud/util/HttpDataUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/apphub-sdk-2.0.0.jar!/com/bamboocloud/api/ApphubSdk.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/jre/lib/rt.jar!/java/net/URLEncoder.class" />
-    <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/DayTimerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcBug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/_MappingKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ssk/XcDatasource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -888,34 +992,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interceptor/MainInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ssk/XcIndex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,27 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="68" column="36" lean-forward="true" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/a_little_config.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interceptor/SimpleCROSFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -971,24 +1030,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SDKLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/HttpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="455" column="39" lean-forward="true" selection-start-line="455" selection-start-column="39" selection-end-line="455" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/aop/Invocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
@@ -1006,13 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/_JFinalDemoGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1024,16 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/DemoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,13 +1129,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
+    <entry file="file://$PROJECT_DIR$/src/Token.java" />
+    <entry file="file://$PROJECT_DIR$/src/token/TokenState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="270">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/a_little_config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interceptor/SimpleCROSFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ssk/_MappingKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/JFinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1133">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/DemoConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="105" column="47" lean-forward="true" selection-start-line="105" selection-start-column="47" selection-end-line="105" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/ssk_war_exploded.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/ssk.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/token/Jwt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-934">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interceptor/MainInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcDatasource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2001">
+          <caret line="205" column="29" selection-start-line="205" selection-start-column="29" selection-end-line="205" selection-end-column="29" />
+          <folding>
+            <element signature="e#4020#4021#0" expanded="true" />
+            <element signature="e#4060#4061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/aop/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interceptor/TokenInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/core/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="476" column="4" lean-forward="true" selection-start-line="476" selection-start-column="4" selection-end-line="476" selection-end-column="4" />
+          <folding>
+            <element signature="e#4807#4808#0" expanded="true" />
+            <element signature="e#4847#4848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SDKLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+          <folding>
+            <element signature="e#2585#2601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -1117,7 +1304,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>jfinal_demo:Web exploded</last-edited>
+          <last-edited>ssk:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1165,7 +1352,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>jfinal_demo</last-edited>
+          <last-edited>ssk</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

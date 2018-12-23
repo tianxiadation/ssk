@@ -21,7 +21,7 @@ public class _MappingKit {
 		arp.addMapping("t_reg_user", "ID", RegUser.class);
 		arp.addMapping("t_reg_user_dept", "ID", RegUserDept.class);
 		arp.addMapping("xc_apply", "id", XcApply.class);
-		arp.addMapping("xc_association", "id", XcAssociation.class);
+		//arp.addMapping("xc_association", "id", XcAssociation.class);
 		arp.addMapping("xc_bug", "id", XcBug.class);
 		arp.addMapping("xc_count", "id", XcCount.class);
 		arp.addMapping("xc_datasource", "id", XcDatasource.class);

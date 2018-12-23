@@ -16,6 +16,7 @@ import controller.*;
 import interceptor.LoginInterceptor;
 import interceptor.MainInterceptor;
 import interceptor.SimpleCROSFilter;
+import interceptor.TokenInterceptor;
 
 /**
  * 本 demo 仅表达最为粗浅的 jfinal 用法，更为有价值的实用的企业级用法
@@ -88,8 +89,8 @@ public class DemoConfig extends JFinalConfig {
 		DruidPlugin druidPlugin1 = createDruidPlugin1();
 		me.add(druidPlugin1);
 
-		// 配置ActiveRecord插件
-		ActiveRecordPlugin arp1 = new ActiveRecordPlugin("temp",druidPlugin1);
+		/*// 配置ActiveRecord插件
+		ActiveRecordPlugin arp1 = new ActiveRecordPlugin("temp",druidPlugin);
 		arp1.setShowSql(true);
 		// 所有映射在 MappingKit 中自动化搞定
 		//model.test._MappingKit.mapping(arp1);
@@ -99,12 +100,12 @@ public class DemoConfig extends JFinalConfig {
 		me.add(druidPlugin2);
 
 		// 配置ActiveRecord插件
-		ActiveRecordPlugin arp2 = new ActiveRecordPlugin("tmk",druidPlugin2);
+		ActiveRecordPlugin arp2 = new ActiveRecordPlugin("tmk",druidPlugin);
 		arp2.setShowSql(true);
 		// 所有映射在 MappingKit 中自动化搞定
 		//model.test._MappingKit.mapping(arp1);
 		me.add(arp2);
-
+*/
 	}
 	//主库
 	public static DruidPlugin createDruidPlugin() {
@@ -125,6 +126,7 @@ public class DemoConfig extends JFinalConfig {
 		me.addGlobalActionInterceptor(new SimpleCROSFilter());
 		me.addGlobalActionInterceptor(new LoginInterceptor());
 		me.addGlobalActionInterceptor(new MainInterceptor());
+		me.addGlobalServiceInterceptor(new TokenInterceptor());
 	}
 	
 	/**
@@ -135,7 +137,7 @@ public class DemoConfig extends JFinalConfig {
 	}
 	@Override
 	public void afterJFinalStart() {
-		TimerManager.dayTimerManager(false);
+		//TimerManager.dayTimerManager(false);
         
 	}
 }
