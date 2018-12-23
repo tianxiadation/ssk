@@ -54,6 +54,15 @@ public abstract class BaseXcApply<M extends BaseXcApply<M>> extends Model<M> imp
 		return getStr("cid");
 	}
 
+	public M setStatus(java.lang.Integer status) {
+		set("status", status);
+		return (M)this;
+	}
+	
+	public java.lang.Integer getStatus() {
+		return getInt("status");
+	}
+
 	public M setResources(java.lang.String resources) {
 		set("resources", resources);
 		return (M)this;

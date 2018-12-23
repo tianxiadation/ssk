@@ -13,6 +13,6 @@ public class XcInterface extends BaseXcInterface<XcInterface> {
 
 
 	public static List<XcInterface> selectXI() {
-		return dao.find("select * from xc_interface");
+		return dao.find("select * from xc_interface order by type");
 	}
 }

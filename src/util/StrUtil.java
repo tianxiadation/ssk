@@ -542,12 +542,25 @@ public class StrUtil {
 			
 		}
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		for (int i = 0; i <100 ; i++) {
 			int j= (int) (Math.random()*3)+1;
 			System.out.println(j);
 		}
 
 
+	}*/
+	public static void main(String[] args) {
+		//System.out.println("COLUMN_NAME sssss and".substring(0,"COLUMN_NAME sssss and".length()-3));
+		HashSet<String> hashSet=new HashSet<String>();
+		hashSet.add("id");
+		hashSet.add("id");
+		hashSet.add("id");
+		System.out.println(hashSet.size());
+		for(String str:hashSet){
+			System.out.println(str);
+		}
+
 	}
 }
+

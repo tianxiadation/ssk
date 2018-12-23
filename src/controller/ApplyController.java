@@ -21,7 +21,7 @@ public class ApplyController extends Controller {
                         "deptName,trueName,resources,typeName,reason,crateTime ","from xc_apply where userid=? order by id desc",user.getId())));
 
     }
-    public void saveApply(){
+   /* public void saveApply(){
         List<XcIndex> list=XcIndex.getXC1();
         String[] str= {"申请中","已通过","被驳回"};
         for(XcIndex xc:list){
@@ -34,7 +34,7 @@ public class ApplyController extends Controller {
         renderJson(MsgUtil.successMsg("测试数据添加成功"));
 
 
-    }
+    }*/
 
 
 }

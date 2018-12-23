@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -37,7 +38,7 @@ public class SDKLoginController extends Controller {
 
 	private ApphubSdk sdk = new ApphubSdk();//new sdk jar
 
-	public void sdkLogin(){
+	public void sdkLogin() {
 		/* 返回值  Invalid stack frame 则为错误，使用接口方式获取*/
 		String accType = getPara("accType");//获取登录方式   值：sdk 为SDK单点登录  值：login 为统一登录页登陆
 		String appName = getPara("appName");//获取应用账户名
@@ -45,101 +46,25 @@ public class SDKLoginController extends Controller {
 		String appRole = getPara("appRole");//获取应用角色 base64
 		String userRole = getPara("userRole");//获取系统角色 base64
 		String accountName = getPara("accountName");//获取应用账户名 若是统一登录页形式 改参数为空
-		this.tokenid = getPara("BBCloudBAMSession");		/*获取token*/
+		this.tokenid = getPara("BBCloudBAMSession");        /*获取token*/
 
 
-		if(this.tokenid==null || "".equals(this.tokenid)){//校验token是否获取到
+		if (StrKit.isBlank(this.tokenid)||StrKit.isBlank(appName)) {//校验token是否获取到
 
-				redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面，重新获取token
-				return;
+			redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面，重新获取token
+			return;
 		}
 
 		Map<String, List<String>> mapper = this.sdk.informal_userInfo_getAttributes(this.tokenid, this.app_id, this.app_key);//获取用户信息
-		if(mapper.containsKey("notToken")){//未获取到用户信息
-			if(this.sdk.informal_isAlive()){//检测 统一用户  是否开启
+		if (mapper.containsKey("notToken")) {//未获取到用户信息
+			if (this.sdk.informal_isAlive()) {//检测 统一用户  是否开启
 
-					redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面
-				    return;
+				redirect("http://zh.hzxc.gov.cn/");//跳转统一的登录页面
+				return;
 			}
+
+			redirect("http://59.202.68.28:8001/#/?appName=" + appName);
 		}
-		/*token存放在session中*/
-		//req.getSession().setMaxInactiveInterval(60*60*4);//设置session为240分钟，可自行解决
-		//req.getSession().setAttribute("tokenid", this.tokenid);//把token 放入session
-		setSessionAttr("tokenid",this.tokenid);
-		/*根据自己的需求    改造的地方    获取用户信息开始*/
-
-
-
-		/*区分两种不同的登陆形式*/
-		//接口形式获得
-		//String accTypeApi = this.sdk.informal_accType(this.tokenid, this.app_id, this.app_key);
-		/*if("sdk".equals(accType)){//SDK单点登陆
-
-		}
-		if("login".equals(accType)){//S统一登陆页登陆
-
-		}*/
-
-		/*统一用户：存储在统一用户中的用户信息*/
-		String username = userName;//统一用户的  用户名
-		String password = mapper.get("userpassword").get(0);//统一用户的  用户名
-		String fullname = mapper.get("sn").get(0);//统一用户的  用户名
-
-
-
-
-
-
-//		/* 获取应用角色信息  开始*/
-		//参数形式
-		if(!"Invalid stack frame ".equals(appRole)){//获取失败，请使用接口访问形式获取
-			List<Map<String, String>> accRoleMapListParameter = analysisRole(appRole);
-			for (Map<String, String> accRoleMapList : accRoleMapListParameter) {//循环角色信息
-				String accRoleCode = accRoleMapList.get("code");//代码
-				String accRoleName = accRoleMapList.get("name");//名称
-				String accRoleNote = accRoleMapList.get("note");//说明
-			}
-		}
-
-
-		//接口访问形式
-		List<Map<String, String>> accRoleMapListApi = this.sdk.informal_userInfo_getAccRoles(this.tokenid, this.app_id, this.app_key);//系统角色
-		for (Map<String, String> accRoleMap : accRoleMapListApi) {//循环角色信息
-			String accRoleCode = accRoleMap.get("code");//代码
-			String accRoleName = accRoleMap.get("name");//名称
-			String accRoleNote = accRoleMap.get("note");//说明
-		}
-		/* 获取系統角色信息 结束*/
-
-
-		/* 接口获取系統角色信息  开始*/
-		//参数形式
-		if(!"Invalid stack frame ".equals(userRole)){//获取失败，请使用接口访问形式获取
-			List<Map<String, String>> userRoleMapListParameter = analysisRole(userRole);
-			for (Map<String, String> userRoleMapList : userRoleMapListParameter) {//循环角色信息
-				String accRoleCode = userRoleMapList.get("code");//代码
-				String accRoleName = userRoleMapList.get("name");//名称
-				String accRoleNote = userRoleMapList.get("note");//说明
-			}
-		}
-
-
-		List<Map<String, String>> userRoleMapListApi = this.sdk.informal_userInfo_getUserRoles(this.tokenid, this.app_id, this.app_key);//应用角色信息
-		for (Map<String, String> userRoleMap : userRoleMapListApi) {//循环角色信息
-			String userRoleCode = userRoleMap.get("code");//代码
-			String userRoleName = userRoleMap.get("name");//名称
-			String userRoleNote = userRoleMap.get("note");//说明
-		}
-		/*接口获取系統角色信息 结束*/
-
-
-
-
-
-
-		/*根据自己的需求    改造的地方  获取用户信息结束*/
-
-		redirect("http://59.202.68.28:8001/");
 	}
 
 
@@ -173,7 +98,7 @@ public class SDKLoginController extends Controller {
 		try {
 			JSONObject json=JsonUtil.getJSONObject(getRequest());
 			XcUser xcUser=json.toJavaObject(XcUser.class);
-			xcUser.save();
+			xcUser.setCrateTime(new Date()).save();
 
 			JSONObject json1=new JSONObject();
 			json1.put("success",true);
@@ -315,15 +240,14 @@ public class SDKLoginController extends Controller {
 	}
 
 
-	//退出
-		@ActionKey("/loginOut")
-		public void loginOut() {
-			removeSessionAttr("user");
-			renderJson(MsgUtil.successMsg("成功退出"));
-			
-		}
+	//
 
 	*/
+	//退出
+	public void loginOut() {
+		removeSessionAttr("user");
+		renderJson(MsgUtil.successMsg("成功退出"));
 
+	}
 
 }

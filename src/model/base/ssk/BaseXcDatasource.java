@@ -72,6 +72,33 @@ public abstract class BaseXcDatasource<M extends BaseXcDatasource<M>> extends Mo
 		return getStr("ename");
 	}
 
+	public M setTableName(java.lang.String tableName) {
+		set("tableName", tableName);
+		return (M)this;
+	}
+	
+	public java.lang.String getTableName() {
+		return getStr("tableName");
+	}
+
+	public M setTableEname(java.lang.String tableEname) {
+		set("tableEname", tableEname);
+		return (M)this;
+	}
+	
+	public java.lang.String getTableEname() {
+		return getStr("tableEname");
+	}
+
+	public M setColumn(java.lang.String column) {
+		set("column", column);
+		return (M)this;
+	}
+	
+	public java.lang.String getColumn() {
+		return getStr("column");
+	}
+
 	public M setBusnum(java.lang.Long busnum) {
 		set("busnum", busnum);
 		return (M)this;
@@ -117,13 +144,13 @@ public abstract class BaseXcDatasource<M extends BaseXcDatasource<M>> extends Mo
 		return getLong("colnum");
 	}
 
-	public M setNum(java.lang.Long num) {
+	public M setNum(java.lang.Integer num) {
 		set("num", num);
 		return (M)this;
 	}
 	
-	public java.lang.Long getNum() {
-		return getLong("num");
+	public java.lang.Integer getNum() {
+		return getInt("num");
 	}
 
 	public M setGmtCreate(java.lang.Long gmtCreate) {
@@ -169,6 +196,15 @@ public abstract class BaseXcDatasource<M extends BaseXcDatasource<M>> extends Mo
 	
 	public java.util.Date getModifyTime() {
 		return get("modifyTime");
+	}
+
+	public M setIsOtherLibraries(java.lang.Integer isOtherLibraries) {
+		set("isOtherLibraries", isOtherLibraries);
+		return (M)this;
+	}
+	
+	public java.lang.Integer getIsOtherLibraries() {
+		return getInt("isOtherLibraries");
 	}
 
 }

@@ -85,24 +85,39 @@ public class DemoConfig extends JFinalConfig {
 		model.ssk._MappingKit.mapping(arp);
 		me.add(arp);// 配置 druid 数据库连接池插件
 
-		/*DruidPlugin druidPlugin1 = createDruidPlugin1();
+		DruidPlugin druidPlugin1 = createDruidPlugin1();
 		me.add(druidPlugin1);
 
 		// 配置ActiveRecord插件
-		ActiveRecordPlugin arp1 = new ActiveRecordPlugin("test",druidPlugin1);
+		ActiveRecordPlugin arp1 = new ActiveRecordPlugin("temp",druidPlugin1);
 		arp1.setShowSql(true);
 		// 所有映射在 MappingKit 中自动化搞定
-		model.test._MappingKit.mapping(arp1);
-		me.add(arp1);*/
+		//model.test._MappingKit.mapping(arp1);
+		me.add(arp1);
+
+		DruidPlugin druidPlugin2 = createDruidPlugin2();
+		me.add(druidPlugin2);
+
+		// 配置ActiveRecord插件
+		ActiveRecordPlugin arp2 = new ActiveRecordPlugin("tmk",druidPlugin2);
+		arp2.setShowSql(true);
+		// 所有映射在 MappingKit 中自动化搞定
+		//model.test._MappingKit.mapping(arp1);
+		me.add(arp2);
+
 	}
-	
+	//主库
 	public static DruidPlugin createDruidPlugin() {
 		return new DruidPlugin(PropKit.get("jdbcUrl"), PropKit.get("user"), PropKit.get("password").trim());
 	}
+	//来源库
 	public static DruidPlugin createDruidPlugin1() {
-		return new DruidPlugin(PropKit.get("ssk"), PropKit.get("myuser"), PropKit.get("mypassword").trim());
+		return new DruidPlugin(PropKit.get("jdbcUrl1"), PropKit.get("user"), PropKit.get("password").trim());
 	}
-	
+	//脱敏库
+	public static DruidPlugin createDruidPlugin2() {
+		return new DruidPlugin(PropKit.get("jdbcUrl2"), PropKit.get("user"), PropKit.get("password2").trim());
+	}
 	/**
 	 * 配置全局拦截器
 	 */
