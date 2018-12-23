@@ -66,4 +66,9 @@ public class XcIndex extends BaseXcIndex<XcIndex> {
 	public static List<XcIndex> getOneXcIndex1(int type){
 		return dao.find("select cid,name,ename,islast from xc_index where type=? and level=1",type);
 	}
+	public static List<XcIndex> getOneXcIndex2(int type,int userid){
+		return dao.find("select a.cid,a.name,a.ename,a.islast,ifnull(b.type,0) type from xc_index a left join " +
+				"(select type,cid from xc_apply where userid=? and isDeleted=false)b on a.cid=b.cid " +
+				"where a.type=? and a.level=1 and a.pid=-1",userid,type);
+	}
 }

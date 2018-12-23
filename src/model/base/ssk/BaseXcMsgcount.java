@@ -36,22 +36,40 @@ public abstract class BaseXcMsgcount<M extends BaseXcMsgcount<M>> extends Model<
 		return getStr("mian");
 	}
 
-	public M setCid(java.lang.Integer cid) {
+	public M setTmian(java.lang.String tmian) {
+		set("tmian", tmian);
+		return (M)this;
+	}
+	
+	public java.lang.String getTmian() {
+		return getStr("tmian");
+	}
+
+	public M setPid(java.lang.String pid) {
+		set("pid", pid);
+		return (M)this;
+	}
+	
+	public java.lang.String getPid() {
+		return getStr("pid");
+	}
+
+	public M setCid(java.lang.String cid) {
 		set("cid", cid);
 		return (M)this;
 	}
 	
-	public java.lang.Integer getCid() {
-		return getInt("cid");
+	public java.lang.String getCid() {
+		return getStr("cid");
 	}
 
-	public M setNum(java.lang.Long num) {
+	public M setNum(java.lang.Integer num) {
 		set("num", num);
 		return (M)this;
 	}
 	
-	public java.lang.Long getNum() {
-		return getLong("num");
+	public java.lang.Integer getNum() {
+		return getInt("num");
 	}
 
 	public M setGmtCreate(java.lang.Long gmtCreate) {

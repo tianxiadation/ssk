@@ -9,6 +9,7 @@ public class TokenUtil {
     public static void main(String[] args) {
         System.out.println(1111);
         System.out.println(createToken());
+
     }
     public static String createToken() {
         return generateValue(UUID.randomUUID().toString());

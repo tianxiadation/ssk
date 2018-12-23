@@ -32,8 +32,8 @@ public class MsgTreeController extends Controller {
             renderJson(MsgUtil.successMsg(XcIndex.getCloud(getParaToInt("type"))));
 
     }
-    //计算字段数static
-    public  void calculation() {
+    //计算字段数
+    public  static void calculation() {
         for (int i = 1; i < 3; i++) {
             List<XcIndex> arr=XcIndex.getXC(i);
             for (XcIndex xc:arr) {
@@ -69,7 +69,7 @@ public class MsgTreeController extends Controller {
             int i3=Db.findFirst("select count(*) num from hz_xc_sssj.rkdzxxinfo where fwyt=?",xc2.getName()).getInt("num");
             Db.update("update xc_index set num=? where id=?",i1+i2+i3,xc2.getId());
         }
-        renderJson(MsgUtil.successMsg("计算字段数值成功"));
+       // renderJson(MsgUtil.successMsg("计算字段数值成功"));
 
     }
 }

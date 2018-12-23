@@ -35,10 +35,10 @@ public class InterfaceFileController extends Controller {
 					t.createNewFile();
 					fs.fileChannelCopy(file, t);//将上传的文件的数据拷贝到本地新建的文件
 					if(file.getName().indexOf("html")>=0){
-						xi.setName(file.getName().replace(".html","")).
-								setPageUrl("https://tyhy.hzxc.gov.cn:28443/md/upload/"+file.getName());
+						xi.setName(getPara("module")+"-"+file.getName().replace(".html","")).
+								setPageUrl("http://59.202.68.28:8080/ssk/upload/"+file.getName());
 					}else{
-						xi.setUrl("https://tyhy.hzxc.gov.cn:28443/md/upload/"+file.getName());
+						xi.setUrl("http://59.202.68.28:8080/ssk/upload/"+file.getName());
 					}
 
 				}

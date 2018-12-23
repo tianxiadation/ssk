@@ -36,6 +36,15 @@ public abstract class BaseXcInterface<M extends BaseXcInterface<M>> extends Mode
 		return getStr("url");
 	}
 
+	public M setType(java.lang.Integer type) {
+		set("type", type);
+		return (M)this;
+	}
+	
+	public java.lang.Integer getType() {
+		return getInt("type");
+	}
+
 	public M setPageUrl(java.lang.String pageUrl) {
 		set("pageUrl", pageUrl);
 		return (M)this;

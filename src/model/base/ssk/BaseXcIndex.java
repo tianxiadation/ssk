@@ -162,4 +162,13 @@ public abstract class BaseXcIndex<M extends BaseXcIndex<M>> extends Model<M> imp
 		return get("modifyTime");
 	}
 
+	public M setIsSelect(java.lang.Boolean isSelect) {
+		set("isSelect", isSelect);
+		return (M)this;
+	}
+	
+	public java.lang.Boolean getIsSelect() {
+		return get("isSelect");
+	}
+
 }

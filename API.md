@@ -1,11 +1,11 @@
 **通用约定**
 
-1. 域名**HOST**代表**xxxxxxx.com**
-2. 所有的**SALT**代表字符串**exam.com.cn**(加密认证时使用)
+1. 正式地址:http://59.202.68.28:8080/
+2. 本地对接地址http://10.18.28.2:28080/
 
 ## 目录
 
-1. 接口文档
+1. 接口查询
 
 2. 下载文档
 
@@ -45,10 +45,10 @@
 
 
 
-### 1.接口文档
+### 1.接口查询
 
 ```http
-http://localhost:28080/ssk/if/selectInterface
+ssk/if/selectInterface
 ```
 
 #### 返回值
@@ -103,13 +103,13 @@ http://localhost:28080/ssk/if/selectInterface
 ### 2.下载文档
 
 ```http
-http://localhost:28080/ssk/if/download
+ssk/if/download
 ```
 
 ### 3.数据源配置
 
 ```http
-http://localhost:28080/ssk/index/selectIndexOrDatasource
+ssk/index/selectIndexOrDatasource
 ```
 
 #### post参数
@@ -190,7 +190,7 @@ http://localhost:28080/ssk/index/selectIndexOrDatasource
 ### 4.指标配置
 
 ```http
-http://localhost:28080/ssk/index/selectIndexOrDatasource
+ssk/index/selectIndexOrDatasource
 ```
 
 #### post参数
@@ -257,7 +257,7 @@ http://localhost:28080/ssk/index/selectIndexOrDatasource
 ### 5.修改或保存数据源配置
 
 ```http
-http://localhost:28080/ssk/index/selectIndexOrDatasource
+ssk/index/selectIndexOrDatasource
 ```
 
 #### post参数，支持格式JOSN   
@@ -309,7 +309,7 @@ http://localhost:28080/ssk/index/selectIndexOrDatasource
 ### 6.信息树
 
 ```http
-http://localhost:28080/ssk/tree/msgTree
+ssk/tree/msgTree
 ```
 
 #### post参数
@@ -367,7 +367,7 @@ http://localhost:28080/ssk/tree/msgTree
 ### 7.信息云
 
 ```http
-http://localhost:28080/ssk/tree/cloud
+ssk/tree/cloud
 ```
 
 #### post参数
@@ -419,7 +419,7 @@ http://localhost:28080/ssk/tree/cloud
 ### 8.查询一条数据源
 
 ```http
-http://localhost:28080/ssk/index/selectDatasourceById
+ssk/index/selectDatasourceById
 ```
 
 #### post参数
@@ -478,7 +478,7 @@ http://localhost:28080/ssk/index/selectDatasourceById
 ### 9.数据统计
 
 ```http
-http://localhost:28080/ssk/base/selectXcCount
+ssk/base/selectXcCount
 ```
 
 #### 返回值
@@ -518,7 +518,7 @@ http://localhost:28080/ssk/base/selectXcCount
 ###  10.首页数据来源
 
 ```http
-http://localhost:28080/ssk/base/selectDatasource
+ssk/base/selectDatasource
 ```
 
 #### post参数
@@ -572,7 +572,7 @@ http://localhost:28080/ssk/base/selectDatasource
 ### 11.首页查询
 
 ```http
-http://localhost:28080/ssk/base/selectLog
+ssk/base/selectLog
 ```
 
 #### post参数
@@ -670,7 +670,7 @@ http://localhost:28080/ssk/base/selectLog
 ### 12.我的申请
 
 ```http
-http://localhost:28080/ssk/apply/selectApply
+ssk/apply/selectApply
 ```
 
 #### post参数
@@ -767,7 +767,7 @@ http://localhost:28080/ssk/apply/selectApply
 ### 13.我的申请查看
 
 ```http
-http://localhost:28080/ssk/apply/selectOneApply
+ssk/apply/selectOneApply
 ```
 
 #### post参数
@@ -800,7 +800,7 @@ http://localhost:28080/ssk/apply/selectOneApply
 ### 14.查询指标是否存在
 
 ```http
-http://localhost:28080/ssk/index/isExist
+ssk/index/isExist
 ```
 
 #### post参数
@@ -828,7 +828,7 @@ http://localhost:28080/ssk/index/isExist
 ### 14.查询数据项
 
 ```http
-http://localhost:28080/ssk/index/selectDataItem
+ssk/index/selectDataItem
 ```
 
 #### post参数
@@ -1015,7 +1015,7 @@ http://localhost:28080/ssk/index/selectDataItem
 ### 15.指标配置编辑保存
 
 ```http
-http://localhost:28080/ssk/index/editIndex
+ssk/index/editIndex
 ```
 
 #### post参数
@@ -1092,7 +1092,7 @@ http://localhost:28080/ssk/index/editIndex
 ### 16.查询服务
 
 ```
-http://localhost:28080/ssk/qs/selectQS
+ssk/qs/selectQS
 ```
 
 #### post参数
@@ -1209,7 +1209,7 @@ http://localhost:28080/ssk/qs/selectQS
 ### 17.查询单个资源信息
 
 ```
-http://localhost:28080/ssk/qs/selectOneQS
+ssk/qs/selectOneQS
 ```
 
 #### post参数
@@ -1269,7 +1269,7 @@ http://localhost:28080/ssk/qs/selectOneQS
 ### 18.申请全信息
 
 ```
-http://localhost:28080/ssk/qs/apply
+ssk/qs/apply
 ```
 
 #### post参数

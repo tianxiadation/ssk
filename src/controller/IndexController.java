@@ -195,4 +195,40 @@ public class IndexController extends Controller {
         }
         renderJson(MsgUtil.successMsg("同步企业表字段成功"));
     }
+        //初始化数据源
+    public void table1() {
+
+            String[] strs={"hz_xc_sgpt","hz_xc_mzj","hz_xc_ssjglj","hz_xc_asqf"};
+            for(String str:strs){
+                List<Record> record= Db.find("SELECT TABLE_NAME,TABLE_COMMENT FROM information_schema.TABLES WHERE " +
+                        "table_schema=?",str);
+                for(Record r:record){
+                    XcDatasource.saveXc(str,r.getStr("TABLE_COMMENT"),r.getStr("TABLE_NAME"),1);
+
+                }
+
+            }
+           List<Record> record1= Db.use("temp").find("SELECT TABLE_NAME,TABLE_COMMENT FROM information_schema.TABLES WHERE table_schema='hz_xc_scjgfj'");
+           for(Record r1:record1){
+               XcDatasource.saveXc("hz_xc_scjgfj",r1.getStr("TABLE_COMMENT"),r1.getStr("TABLE_NAME"),2);
+
+           }
+           List<XcDatasource> list=XcDatasource.dao.find("select * from xc_datasource");
+           for(XcDatasource xc:list){
+               if(xc.getIsOtherLibraries()==1){
+                   Long i=Db.findFirst("select count(*) num from "+xc.getEname()+"."+xc.getTableEname()+"").getLong("num");
+                   Long j=Db.findFirst("SELECT COUNT(*) num FROM INFORMATION_SCHEMA.Columns " +
+                           "WHERE table_name=? AND table_schema=?",xc.getTableEname(),xc.getEname()).getLong("num");
+                   xc.setBusnum(i).setTypenum(i).setColnum(j).update();
+               }else{
+                   Long i=Db.use("temp").findFirst("select count(*) num from "+xc.getEname()+"."+xc.getTableEname()+"").getLong("num");
+                   Long j=Db.use("temp").findFirst("SELECT COUNT(*) num FROM INFORMATION_SCHEMA.Columns " +
+                           "WHERE table_name=? AND table_schema=?",xc.getTableEname(),xc.getEname()).getLong("num");
+                   xc.setBusnum(i).setTypenum(i).setColnum(j).update();
+               }
+           }
+
+                renderJson(MsgUtil.successMsg("同步企业表英文名成功"));
+    }
+
 }
