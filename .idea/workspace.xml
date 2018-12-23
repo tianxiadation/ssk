@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="jfinal_demo:Web exploded" />
       <artifact name="ssk:Web exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60d46e16-bab0-40af-bfd6-7dacb2f9cc7e" name="Default" comment="12.16.1">
+    <list default="true" id="60d46e16-bab0-40af-bfd6-7dacb2f9cc7e" name="Default" comment="12.16.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
+    <ignored path="D:/coco/jfinal_demo_for_maven/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,41 +22,45 @@
     <session id="613934469">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="14" />
+          <entry key="class" value="2" />
+          <entry key="java" value="19" />
           <entry key="md" value="1" />
-          <entry key="txt" value="1" />
+          <entry key="sql" value="1" />
+          <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="14" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="19" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SQL" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1234" />
-          <entry key="txt" value="49" />
+          <entry key="java" value="1235" />
+          <entry key="txt" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1234" />
-          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="JAVA" value="1235" />
+          <entry key="PLAIN_TEXT" value="72" />
         </counts>
       </usages-collector>
     </session>
@@ -65,20 +70,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+            <state relative-caret-position="234">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/ssk/XcApply.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -148,6 +144,8 @@
         <option value="$PROJECT_DIR$/src/util/TokenUtil.java" />
         <option value="$PROJECT_DIR$/src/model/ssk/XcApply.java" />
         <option value="$PROJECT_DIR$/src/controller/QueryServiceController.java" />
+        <option value="D:/coco/jfinal_demo/res/a_little_config.txt" />
+        <option value="D:/coco/jfinal_demo/src/com/demo/blog/BlogController.java" />
       </list>
     </option>
   </component>
@@ -185,31 +183,12 @@
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
@@ -217,46 +196,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544974754794" />
-    <property name="last_opened_file_path" value="D:" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545546378838" />
+    <property name="last_opened_file_path" value="D:/coco/jfinal_demo/WebRoot/WEB-INF/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -270,6 +224,7 @@
       <recent name="controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\coco\jfinal_demo\WebRoot\WEB-INF\lib" />
       <recent name="E:\coco\ssk\src\util" />
       <recent name="E:\coco\ssk\WebRoot\WEB-INF\lib" />
     </key>
@@ -286,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TokenUtil">
+  <component name="RunManager" selected="Tomcat Server.ssk">
     <configuration name="ApplyController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.ApplyController" />
       <module name="ssk" />
@@ -368,9 +323,9 @@
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="ssk:Web exploded">
+        <artifact name="jfinal_demo:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/ssk" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -541,7 +496,9 @@
       <workItem from="1544851894821" duration="761000" />
       <workItem from="1544858456097" duration="2600000" />
       <workItem from="1544864684218" duration="23414000" />
-      <workItem from="1544968589896" duration="4548000" />
+      <workItem from="1544968589896" duration="4788000" />
+      <workItem from="1545228556791" duration="3638000" />
+      <workItem from="1545545640757" duration="703000" />
     </task>
     <task id="LOCAL-00001">
       <created>1542178392902</created>
@@ -683,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544974390824</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="12.16.2">
+      <created>1544975389380</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1544975389380</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284087000" />
+    <option name="totallyTimeSpent" value="288668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -698,7 +662,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" weight="0.32980332" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.3207262" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="JRebel" order="9" side_tool="true" />
@@ -708,10 +672,10 @@
       <window_info anchor="bottom" id="Messages" order="3" weight="0.33442622" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32838285" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.27540985" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49924356" visible="true" weight="0.27540985" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.27540985" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.34918034" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.25737706" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
@@ -782,58 +746,14 @@
     <MESSAGE value="12.12" />
     <MESSAGE value="12.16" />
     <MESSAGE value="12.16.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.16.1" />
+    <MESSAGE value="12.16.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.16.2" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.5-bin-with-src.jar!/com/jfinal/plugin/activerecord/ActiveRecordPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ssk/XcInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcDatasource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="103" column="23" lean-forward="true" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/node/NodeOrderComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/base/ssk/BaseXcIndex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1090,9 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
           <caret line="167" selection-start-line="167" selection-end-line="167" />
-          <folding>
-            <element signature="e#4847#4848#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1124,9 +1041,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,17 +1051,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/迅雷下载/jfinal-3.5-all/com/jfinal/token/Token.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/迅雷下载/jfinal-3.5-all/com/jfinal/token/ITokenCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140" />
+      </provider>
+    </entry>
+    <entry file="file://D:/迅雷下载/jfinal-3.5-all/com/jfinal/token/TokenManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1304">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/coco/jfinal_demo/启动说明/blog.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/coco/jfinal_demo/WebRoot/WEB-INF/lib/jwt_lq-1.0.jar!/util/JwtUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/coco/jfinal_demo/res/a_little_config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ssk/XcApply.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="324">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/coco/jfinal_demo/src/com/demo/blog/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="58" column="7" selection-start-line="55" selection-start-column="4" selection-end-line="58" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/QueryServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1160,7 +1117,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ssk:Web exploded</last-edited>
+          <last-edited>jfinal_demo:Web exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1208,7 +1165,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ssk</last-edited>
+          <last-edited>jfinal_demo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1232,6 +1189,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: cglib:cglib-nodep:3.2.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
